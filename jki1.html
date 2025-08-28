@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JKi S.Haven LTD</title>
+  <style>
+    :root { --nav-h: 64px; }
+
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background:
+        linear-gradient(135deg,
+          rgba(15,32,39,0.40),
+          rgba(32,58,67,0.40),
+          rgba(44,83,100,0.40)),
+        url("images/images212.jpg") center/cover no-repeat fixed;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+
+    /* Floating Navbar */
+    nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: var(--nav-h);
+      background: rgba(0, 0, 0, 0.75);
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 0 20px;
+      backdrop-filter: blur(6px);
+      z-index: 1000;
+      border-bottom: 2px solid #333;
+    }
+    nav .logo {
+      margin-right: auto;
+      color: #80dfff;
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 1.1rem;
+      letter-spacing: .3px;
+      transition: .25s;
+    }
+    nav .logo:hover { color:#ff6666; text-shadow:0 0 10px #ff6666; }
+    nav a {
+      color: #80dfff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: .25s;
+    }
+    nav a:hover { color:#ff6666; text-shadow:0 0 10px #ff6666; }
+
+    header {
+      text-align: center;
+      padding: calc(var(--nav-h) + 40px) 20px 40px; /* keep clear of fixed nav */
+    }
+
+    /* Animated glowing headings */
+    header h1, header h2, header h3 {
+      color: red;
+      text-shadow:
+        0 0 10px #ff0000,
+        0 0 20px #ff4d4d,
+        0 0 40px #ff6666;
+      margin: 10px 0;
+      animation: glowPulse 2s infinite alternate ease-in-out;
+    }
+    @keyframes glowPulse {
+      0%   { text-shadow:0 0 5px #ff0000, 0 0 15px #ff3333, 0 0 30px #ff6666; transform:scale(1); }
+      100% { text-shadow:0 0 20px #ff0000, 0 0 40px #ff3333, 0 0 60px #ff6666; transform:scale(1.05); }
+    }
+    header h1 { font-size: 3rem; font-weight: 800; }
+    header h2 { font-size: 1.8rem; font-weight: 800; }
+    header h3 { font-size: 1.2rem; font-weight: 400; }
+
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: rgba(0,0,0,.55);
+      padding: 25px;
+      border-radius: 16px;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 0 25px rgba(0,0,0,.5);
+    }
+
+    /* Make anchor targets not hide under the fixed nav */
+    h2[id] { scroll-margin-top: calc(var(--nav-h) + 16px); }
+
+    h2 {
+      margin-top: 35px;
+      color: #80dfff;
+      text-shadow: 0 0 12px #0099cc;
+    }
+
+    p { line-height: 1.6; }
+
+    a { color:#80dfff; text-decoration:none; font-weight:700; transition:.25s; }
+    a:hover { color:#ff6666; text-shadow:0 0 12px #ff6666; }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+      margin-top: 10px;
+      border-radius: 12px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+      margin-top: 18px;
+    }
+    .gallery img {
+      width: 280px;
+      border-radius: 14px;
+      transition: transform .3s, box-shadow .3s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px rgba(255,255,255,.8);
+    }
+
+    footer {
+      background: rgba(0,0,0,.85);
+      color: #bbb;
+      text-align: center;
+      padding: 18px;
+      margin-top: 40px;
+      border-top: 2px solid #444;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Navigation -->
+  <nav>
+    <a href="#top" class="logo">✨ JKi S.Haven LTD</a>
+    <a href="#courses">Courses</a>
+    <a href="#map">Map</a>
+    <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+
+  <header id="top">
+    <h1>JKi company LTD</h1>
+    <h2>Located along Thika Road</h2>
+    <h3>Thika, Kiambu</h3>
+  </header>
+
+  <main>
+    <h2 id="courses">Free Courses Offered:</h2>
+    <p><b>1. ICT</b> – Computer basics, OS, files/folders, productivity tools, troubleshooting.</p>
+    <p><b>2. Basic Electronics</b> – Circuits, resistors, capacitors, breadboards, microcontrollers.</p>
+    <p><b>3. Networking</b> – IP addresses, pinging, LAN/WAN, Wi-Fi setup, file sharing.</p>
+    <p><b>4. Coding</b> – HTML, CSS, JavaScript, Kotlin, Python.</p>
+    <p><b>5. Graphics Design</b> – Canva, image editing, logos, branding.</p>
+    <p><b>6. Web Development</b> – Frontend, Hosting, Maps, Layouts.</p>
+    <p><b>7. App Development</b> – Android Studio, Layout XML, debugging.</p>
+    <p><b>8. Game Development</b> – Unity/Godot, simple logic games.</p>
+
+    <h2 id="map">Our Location on Google Maps</h2>
+    <!-- Exact place: X38G+66Q, Uhuru St, Thika -->
+    <iframe
+      src="https://www.google.com/maps?q=X38G%2B66Q%2C%20Uhuru%20St%2C%20Thika&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen>
+    </iframe>
+    <p>
+      <a href="https://www.google.com/maps?q=X38G%2B66Q%2C%20Uhuru%20St%2C%20Thika" target="_blank">🌍 Open exact location in Google Maps</a>
+    </p>
+
+    <h2 id="contact">Contact Us</h2>
+    <p><a href="mailto:jocentokamau@gmail.com">📧 Email Me</a></p>
+    <p><a href="https://wa.me/254790241800" target="_blank">💬 Chat on WhatsApp</a></p>
+
+    <h2 id="gallery">Gallery</h2>
+    <div class="gallery">
+      <img src="images/download.jpg" alt="Computer Lab">
+      <img src="images/download1.jpg" alt="Electronics Setup">
+      <img src="images/download2.jpg" alt="Networking Training">
+      <img src="images/download3.jpg" alt="Programming Class">
+      <img src="images/download44.jpg" alt="Design Session">
+      <img src="images/images22.jpg" alt="Web Development Workshop">
+      <img src="images/images7.jpg" alt="App Development">
+      <img src="images/images6.jpg" alt="Game Development">
+      <img src="images/images1.jpg" alt="ICT Training">
+      <img src="images/images2.jpg" alt="Team Project">
+    </div>
+
+    <h2>Graphics Design</h2>
+    <div class="gallery">
+      <img src="images/images_4.jpg" alt="Design Poster">
+      <img src="images/download_3.jpg" alt="Logo Design">
+      <img src="images/jpg.jpg" alt="Branding Sample">
+      <img src="images/weed_1.jpg" alt="Creative Art">
+      <img src="images/images212.jpg" alt="Digital Graphics">
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 JKi S.Haven LTD | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
+

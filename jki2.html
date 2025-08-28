@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JKi Haven LTD</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+
+      /* Gradient overlay + clearer background image */
+      background: linear-gradient(
+                  135deg,
+                  rgba(15, 32, 39, 0.35),
+                  rgba(32, 58, 67, 0.35),
+                  rgba(44, 83, 100, 0.35)
+                ),
+                url("images/images212.jpg") center/cover no-repeat fixed;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1, 
+    header h2, 
+    header h3 {
+      color: red;
+      text-shadow: 
+        0 0 10px #ff0000, 
+        0 0 20px #ff4d4d, 
+        0 0 40px #ff6666;
+      margin: 10px 0;
+      animation: glowPulse 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes glowPulse {
+      0% {
+        text-shadow: 0 0 5px #ff0000, 0 0 15px #ff3333, 0 0 30px #ff6666;
+        transform: scale(1);
+      }
+      100% {
+        text-shadow: 0 0 20px #ff0000, 0 0 40px #ff3333, 0 0 60px #ff6666;
+        transform: scale(1.05);
+      }
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    header h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    header h3 {
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: rgba(0,0,0,.4);
+      padding: 25px;
+      border-radius: 14px;
+      backdrop-filter: blur(3px);
+      box-shadow: 0 0 20px rgba(0,0,0,.4);
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #80dfff;
+      text-shadow: 0 0 10px #0099cc;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #80dfff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: .3s;
+    }
+    a:hover {
+      color: #ff6666;
+      text-shadow: 0 0 10px #ff6666;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 12px;
+      transition: transform .3s, box-shadow .3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px rgba(255,255,255,.7);
+    }
+
+    footer {
+      background: rgba(0,0,0,.8);
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      border-top: 2px solid #444;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JKi S.Haven LTD</h1>
+    <h2>Located at Jodan College of Technology</h2>
+    <h3>Uhuru St, Thika, Kiambu</h3>
+  </header>
+
+  <main>
+    <h2>Free Courses Offered:</h2>
+    <p><b>1. ICT (Information & Communication Technology)</b> – Computer basics, OS, files/folders, productivity tools, troubleshooting.</p>
+    <p><b>2. Basic Electronics</b> – Circuits, resistors, capacitors, breadboards, microcontrollers (e.g., Micro:bit, Arduino).</p>
+    <p><b>3. Networking</b> – IP addresses, pinging, LAN/WAN, Wi-Fi setup, file sharing, troubleshooting.</p>
+    <p><b>4. Coding / Programming</b> – HTML, CSS, JavaScript, Kotlin, Python.</p>
+    <p><b>5. Graphics Design</b> – Canva, image editing, logos, branding.</p>
+    <p><b>6. Web Development</b> – Frontend (HTML, CSS, JS), Hosting, Maps, Layouts.</p>
+    <p><b>7. App Development</b> – Android Studio, Layout XML, debugging.</p>
+    <p><b>8. Game Development</b> – Unity/Godot, simple logic games.</p>
+
+    <h2>Our Location on Google Maps</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1685.527017607302!2d37.07438752055169!3d-1.0351533146663898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4feacfbaf82f%3A0xafc57d3580d261f0!2sJodan%20College%20Of%20Technology-Main%20Campus!5e1!3m2!1sen!2ske!4v1756301006559!5m2!1sen!2ske" 
+      loading="lazy" allowfullscreen>
+    </iframe>
+    <p><a href="https://www.google.com/maps/place/Jodan+College+Of+Technology-Main+Campus/@-1.0351533,37.0743875,18z" target="_blank">🌍 Open in Google Maps</a></p>
+
+    <h2>Contact Us</h2>
+    <p><a href="mailto:jocentokamau@gmail.com">📧 Email Me</a></p>
+    <p><a href="https://wa.me/254790241800" target="_blank">💬 Chat on WhatsApp</a></p>
+
+    <h2>General Gallery</h2>
+    <div class="gallery">
+      <img src="images/download.jpg" alt="Image 1">
+      <img src="images/download1.jpg" alt="Image 2">
+      <img src="images/download2.jpg" alt="Image 3">
+      <img src="images/download3.jpg" alt="Image 4">
+      <img src="images/download44.jpg" alt="Image 5">
+      <img src="images/images22.jpg" alt="Image 6">
+      <img src="images/images7.jpg" alt="Image 7">
+      <img src="images/images6.jpg" alt="Image 8">
+      <img src="images/images1.jpg" alt="Image 9">
+      <img src="images/images2.jpg" alt="Image 10">
+    </div>
+  
+    <h2>Graphics Design Samples</h2>
+    <div class="gallery">
+      <img src="images/images_4.jpg" alt="Image 1">
+      <img src="images/download_3.jpg" alt="Image 2">
+      <img src="images/jpg.jpg" alt="Image 3">
+      <img src="images/weed_1.jpg" alt="Image 4">
+      <img src="images/images212.jpg" alt="Image 5">
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 JKi S.Haven LTD | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
